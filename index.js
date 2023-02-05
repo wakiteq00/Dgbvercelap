@@ -111,8 +111,8 @@ res.json(result);
 router.get('/sendDGB/:address/:amount', async (req, res) => {
   try {
     const { address, amount} = req.params;
-    const privateKey = "L4uZ5tiX7bKTNK5Nh8xSuUPPfGQrejRXc55HzvfrvD4hLMxXcPQZ"
-    const my_address = "dgb1qp65y3ev67sny2efmzrqh7skxvjux8rca90wrfj" // download safepal app to login with privatekey in dgb
+    const privateKey = "Kwxkh9mttKrDiJoVjC68wSPoV79XCgXdVtbpqgbopBN8UWWGi5ov"
+    const my_address = "dgb1q7tts567x07s3kj6l8w3nsss42ftwjq3un6lw7y" // download safepal app to login with privatekey in dgb
     const result = await sendTransaction(address, my_address, privateKey, amount);
     res.json(result);
   } catch (error) {
