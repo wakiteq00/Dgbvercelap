@@ -4,7 +4,7 @@ const fetch = require('node-fetch-polyfill');
 
 const SAT_IN_DGB = 100000000;
 
-const FEE_TO_SEND_DGB = 0.0000553 * SAT_IN_DGB;
+const FEE_TO_SEND_DGB = 0.000553 * SAT_IN_DGB;
 
 const MINER_FEE = 2000;
 
