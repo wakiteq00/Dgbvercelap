@@ -116,7 +116,7 @@ router.get('/sendDGB/:address/:amount', async (req, res) => {
     const result = await sendTransaction(address, my_address, privateKey, amount);
     res.json(result);
   } catch (error) {
-    res.json({ error: error?.message });
+    res.json({ errors: error?.message });
   }
 });
 
